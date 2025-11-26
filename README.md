@@ -1,20 +1,29 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# WebAuth
 
-# Run and deploy your AI Studio app
+A lightweight web authentication solution.
 
-This contains everything you need to run your app locally.
+## Prerequisites
+- Node.js (v16+) installed
+- pnpm installed globally (run `npm install -g pnpm` if missing)
 
-View your app in AI Studio: https://ai.studio/apps/drive/1dCA48GxuI1Y2-J7LjSMrDl7Cz4bVL5mc
+## Quick Start & Deployment
 
-## Run Locally
+### 1. Clone the Repository
+```bash
+git clone https://github.com/xywml/WebAuth.git
+cd WebAuth
+```
 
-**Prerequisites:**  Node.js
+### 2. Install Dependencies
+```bash
+pnpm install
+```
 
+### 3. Build the Project
+```bash
+pnpm run build
+```
+> A `dist/` directory with production-ready static assets will be generated upon successful build.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 4. Deploy to Your Server
+Copy the **entire `dist/` directory** from your local machine to the static file serving path of your server (e.g., Nginx `html/` folder, Apache `htdocs/`, etc.).
