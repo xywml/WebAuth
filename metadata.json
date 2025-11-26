@@ -1,0 +1,7 @@
+{
+  "name": "WebAuthenticator",
+  "description": "A secure, purely static, client-side 2FA (TOTP) generator compatible with Google Authenticator. Features QR code scanning, manual entry, and encrypted local storage.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
